@@ -1312,7 +1312,17 @@ export class News extends Component {
             loading:false
         }
     }
+
+    async componentDidMount(){
+      console.log("Render");
+      let url="https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=648b4ec1cd3f4da7b46554e0f9259a6c";
+      let data=await fetch(url);
+      let parsedData= await data.json();
+      console.log(parsedData);
+      this.setState({articles:parsedData.articles});
+    }
     render() {
+      console.log("Render 2")
         return (
             <div className='container my-3'>
                 <h1>News Monkey - top headline</h1>
