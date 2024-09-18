@@ -6,7 +6,7 @@ export class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg bg-body-tertiary">
+                <nav className="navbar navbar-expand-lg bg-body-tertiary ">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">News Monkey</a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +20,6 @@ export class Navbar extends Component {
                                 <li className="nav-item">
                                     <a className="nav-link" href="/about">About</a>
                                 </li>
-                                
-                                
                             </ul>
                             <form className="d-flex" role="search">
                                 <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
